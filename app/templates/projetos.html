@@ -1,0 +1,11 @@
+<h2>Meus Projetos</h2>
+
+<a href="/projetos/novo">Novo Projeto</a>
+
+<ul>
+{% for p in projetos %}
+    <li>
+        <strong>{{ p.nome }}</strong> - {{ p.descricao }}
+    </li>
+{% endfor %}
+</ul>
